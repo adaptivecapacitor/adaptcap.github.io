@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resilience Development Initiative</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        font-family: 'Amiri', serif;
+        font-size: 1.1rem;
+      }
+
+      body::after {
+        content: "";
+        background: url('./changi-airport.jpg');
+        filter: blur(4px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .gradient-box {
+        background: rgba(255,255,255,0.4);
+        width: 50%;
+        margin: auto;
+        margin-top: 18%;
+        padding: 3rem;
+        //box-shadow: 0 0 40px 40px white;
+      }
+
+      .title {
+        font-size: 4vmin;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      @media screen and (max-width: 500px) {
+        body {
+          background-position: center;
+        }
+
+        .gradient-box {
+          padding: 2rem;
+          width: 80%;
+          margin-top: 30%;
+        }
+
+        .title {
+          font-size: 1.4rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gradient-box">
+      <div class="title">The Resilience Development Initiative</div>
+      <div class="blurb">
+        <p>
+          The Resilience Development Initiative supports COVID-19-response
+          efforts that create long-term civilizational resilience. We believe
+          resilience infrastructure can include both immediate practical needs
+          (such as consolidating PPE donation efforts) and long-term cultural
+          shifts. To projects developing this infrastructure, we offer funding,
+          talent, and connections to an extensive network of professionals
+          responding to the crisis.
+        </p>
+        <p>
+          If you know of such a project, or would like to contribute resources
+          to our initiative, please contact us at ___________________
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
