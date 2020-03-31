@@ -39,9 +39,16 @@
         color: #148bc5;
       }
 
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
       .gradient-box {
         background: rgba(255,255,255,0.4);
         width: 50%;
+        max-width: 700px;
         margin: auto;
         margin-top: 18%;
         padding: 3rem;
@@ -49,21 +56,22 @@
       }
 
       .title {
-        font-size: 4vmin;
+        font-size: 2.5rem;
         margin: auto;
         text-align: center;
         font-weight: bold;
       }
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 620px) {
         body {
-          background-position: center;
+          font-size: 1rem;
         }
 
         .gradient-box {
           padding: 2rem;
           width: 80%;
-          margin-top: 30%;
+          margin-top: 0;
+          padding-bottom: 1rem;
         }
 
         .title {
@@ -74,18 +82,20 @@
   </head>
 
   <body>
-    <div class="gradient-box">
-      <div class="title">The Resilient Societies Initiative</div>
-      <div class="blurb">
-        <p>
-          The Resilience Development Initiative supports COVID-19-response efforts that create long-term civilizational resilience. We believe resilience infrastructure can include both immediate practical needs, such as consolidating PPE donation efforts and building contact-tracing systems, and long-term cultural shifts. For projects developing this infrastructure, we offer funding, talent, and connections to an extensive network of professionals responding to the crisis.
-        </p>
-        <p>
-          If you know of such a project, or would like to contribute resources
-          to our initiative, please contact us at
-          <a href="mailto:contact@resilientsocietiesinitiative.org">
-            contact@resilientsocietiesinitiative.org</a>.
-        </p>
+    <div class="container">
+      <div class="gradient-box">
+        <div class="title">The Resilient Societies Initiative</div>
+        <div class="blurb">
+          <p>
+            The Resilience Development Initiative supports COVID-19-response efforts that create long-term civilizational resilience. We believe resilience infrastructure can include both immediate practical needs, such as consolidating PPE donation efforts and building contact-tracing systems, and long-term cultural shifts. For projects developing this infrastructure, we offer funding, talent, and connections to an extensive network of professionals responding to the crisis.
+          </p>
+          <p>
+            If you know of such a project, or would like to contribute resources
+            to our initiative, please contact us at
+            <a href="mailto:contact@resilientsocietiesinitiative.org">
+              contact@resilientsocietiesinitiative.org</a>.
+          </p>
+        </div>
       </div>
     </div>
   </body>
